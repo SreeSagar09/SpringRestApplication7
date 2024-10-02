@@ -1,0 +1,14 @@
+A Program to demonstrate the use of @GetMapping, @PostMapping, @PutMapping, @PatchMapping and @DeleteMapping:
+Programs:
+* AppConfig.java
+* AppInit.java
+* ApplicationController.java
+Notes:
+* The @GetMapping, @PostMapping, @PutMapping, @PatchMapping and @DeleteMapping all the annotations are used to mapping the http request onto the specific handler method.
+* All the above annotations are used at method level only.
+* This all the above annotations accepts name, value, path, params, headers, consumes and produces attributes.
+* The @GetMapping annotation is a composed annotation, this is act as a shortcut for @RequestMapping(method = RequestMethod.GET).
+* The @PostMapping annotation is a composed annotation, this is act as a shortcut for @RequestMapping(method = RequestMethod.POST).
+* The @PutMapping annotation is a composed annotation, this is act as a shortcut for @RequestMapping(method = RequestMethod.PUT).
+* The @PatchMapping annotation is a composed annotation, this is act as a shortcut for @RequestMapping(method = RequestMethod.PATCH).
+* The @DeleteMapping annotation is a composed annotation, this is act as a shortcut for @RequestMapping(method = RequestMethod.DELETE).
