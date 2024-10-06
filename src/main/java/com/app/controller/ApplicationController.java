@@ -19,61 +19,81 @@ public class ApplicationController {
 	
 	@GetMapping(path = "/getMethod")
 	public ResponseEntity<Map<String, Object>> getMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "getMethod");
-		data.put("className", "ApplicationController");
-		data.put("description", "This getMethod method annotated with @GetMapping");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "getMethod");
+			data.put("className", "ApplicationController");
+			data.put("description", "This getMethod method annotated with @GetMapping");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@PostMapping(path = "/postMethod")
 	public ResponseEntity<Map<String, Object>> postMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "postMethod");
-		data.put("className", "ApplicationController");
-		data.put("description", "This postMethod method annotated with @PostMapping");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "postMethod");
+			data.put("className", "ApplicationController");
+			data.put("description", "This postMethod method annotated with @PostMapping");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@PutMapping(path = "/putMethod")
 	public ResponseEntity<Map<String, Object>> putMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "putMethod");
-		data.put("className", "ApplicationController");
-		data.put("description", "This putMethod method annotated with @PutMapping");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "putMethod");
+			data.put("className", "ApplicationController");
+			data.put("description", "This putMethod method annotated with @PutMapping");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.OK);
+		}
 		return responseEntity;
 	}
 	
 	@PatchMapping(path = "/patchMethod")
 	public ResponseEntity<Map<String, Object>> patchMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "patchMethod");
-		data.put("className", "ApplicationController");
-		data.put("description", "This patchMethod method annotated with @PatchMapping");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "patchMethod");
+			data.put("className", "ApplicationController");
+			data.put("description", "This patchMethod method annotated with @PatchMapping");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@DeleteMapping(path = "/deleteMethod")
 	public ResponseEntity<Map<String, Object>> deleteMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "deleteMethod");
-		data.put("className", "ApplicationController");
-		data.put("description", "This deleteMethod method annotated with @DeleteMapping");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "deleteMethod");
+			data.put("className", "ApplicationController");
+			data.put("description", "This deleteMethod method annotated with @DeleteMapping");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
